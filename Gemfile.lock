@@ -29,7 +29,7 @@ GEM
       rake
     arel (4.0.0)
     atomic (1.1.14)
-    bcrypt-ruby (3.1.2)
+    bcrypt-ruby (3.0.1)
     bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
     builder (3.1.4)
@@ -150,7 +150,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-  bcrypt-ruby
+  bcrypt-ruby (~> 3.0.0)
   bootstrap-sass
   capybara
   coffee-rails
