@@ -26,7 +26,7 @@
     <orderEntry type="library" scope="PROVIDED" name="annotate (v2.5.0, ruby-2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v4.0.0, ruby-2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="atomic (v1.1.14, ruby-2.0.0-p247) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bcrypt-ruby (v3.1.2, ruby-2.0.0-p247) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt-ruby (v3.0.1, ruby-2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v2.3.2.2, ruby-2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.1.4, ruby-2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.5, ruby-2.0.0-p247) [gem]" level="application" />
@@ -43,6 +43,7 @@
     <orderEntry type="library" scope="PROVIDED" name="factory_girl (v4.2.0, ruby-2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_girl_rails (v4.2.1, ruby-2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="gherkin (v2.12.2, ruby-2.0.0-p247) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="gravatar-ultimate (v2.0.0, ruby-2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.3, ruby-2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.5, ruby-2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v3.0.4, ruby-2.0.0-p247) [gem]" level="application" />

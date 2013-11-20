@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby', '~> 3.0.0'
-
+gem 'gravatar-ultimate'
 
 group :development do
   gem 'annotate'
