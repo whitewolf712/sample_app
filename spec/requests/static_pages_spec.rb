@@ -19,7 +19,7 @@ describe "StaticPages" do
     it { should_not have_title("#{full_title('')} | ") }
     it "should have the right links on the layout" do
       visit root_path
-      # About - 2 ссылки, как быть?
+
       click_link "Help"
       page.should have_title full_title('Help')
       click_link "Contacts"
