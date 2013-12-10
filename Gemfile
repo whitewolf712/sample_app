@@ -4,6 +4,9 @@ gem 'rails'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'gravatar-ultimate'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 group :development do
   gem 'annotate'

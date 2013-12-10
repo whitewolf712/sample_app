@@ -1,31 +1,30 @@
-Given /^a user vistis the signin page$/ do
+Given(/^a user vistis the signin page$/) do
   visit signin_path
 end
 
-When /^he submits invalid signin information$/ do
-  click_button "Sign in"
+When(/^he submits invalid signin information$/) do
+  click_button 'Sign in'
 end
 
-Then /^he should see an error message$/ do
-  # page.should have_selector('div.alert.alert-error')
-  page.should have_error_message('Invalid')
+Then(/^he should see an error message$/) do
+  page.should have_selector('div.alert.alert-error', text: 'Invalid')
 end
 
-Given /^the user has an account$/ do
-  @user = User.create(name: "Example User", email: "user@example.com",
-                      password: "foobar", password_confirmation: "foobar")
+Given(/^the user has an account$/) do
+  @user = User.create(name: 'Example User', email: 'user@example.com',
+                      password: 'foobar', password_confirmation: 'foobar')
 end
 
-When /^the user submits valid signin information$/ do
-  fill_in "Email",    with: @user.email
-  fill_in "Password", with: @user.password
-  click_button "Sign in"
+When(/^the user submits valid signin information$/) do
+  fill_in 'Email', with: @user.email
+  fill_in 'Password', with: @user.password
+  click_button 'Sign in'
 end
 
-Then /^he should see his profile page$/ do
-  page.should have_title(@user.name)
+Then(/^he should see his profile page$/) do
+  page.should have_title @user.name
 end
 
-Then /^he should see a signout link$/ do
+Then(/^he should see a signout link$/) do
   page.should have_link('Sign out', href: signout_path)
 end
