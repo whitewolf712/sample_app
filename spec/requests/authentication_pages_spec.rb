@@ -110,5 +110,15 @@ describe 'Authentication' do
         specify { response.should redirect_to(root_path) }
       end
     end
+
+    describe 'for signed-in users' do
+      let(:user) { FactoryGirl.create(:user) }
+      before { sign_in user }
+
+      describe 'when visit a Sign up path' do
+        before { visit signup_url }
+        it { should have_title full_title user.name }
+      end
+    end
   end
 end

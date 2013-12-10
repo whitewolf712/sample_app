@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
-  before_action :signed_in_user, only: [:index, :edit, :update]
-  before_action :correct_user,   only: [:edit, :update]
-  before_action :admin_user,     only: [:destroy]
+  before_action :signed_in_user,     only: [:index, :edit, :update]
+  before_action :correct_user,       only: [:edit, :update]
+  before_action :admin_user,         only: [:destroy]
+  before_action :non_signed_in_user, only: [:new, :create]
 
   def index
     @users = User.paginate(page: params[:page])
@@ -58,10 +59,14 @@ private
     redirect_to signin_url, notice: 'Please sign in.' unless signed_in?
   end
 
+  def non_signed_in_user
+    redirect_to @current_user if signed_in?
+  end
+
   # Check the user operations called from current user. Otherwise - redirect to root_path
   def correct_user
     @user = User.find(params[:id])
-    redirect_to(root_path) unless current_user?(@user)
+    redirect_to root_path unless current_user?(@user)
   end
 
   def admin_user
